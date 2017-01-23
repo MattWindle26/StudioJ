@@ -1,0 +1,1 @@
+$(".nav-trigger").on("click",function(){$("nav").toggleClass("open-nav"),$("nav").hasClass("open-nav")?$("html").css("overflow-y","hidden"):$("html").css("overflow-y","auto")});

@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+.button{
+  background-color: $secondaryColor;
+  padding: 10px 20px;
+  margin:0 auto;
+  display: inline-block;
+  @include flex-align-self-center;
+  margin-top: 40px;
+  &:hover{
+    cursor: pointer;
+  }
+  p{
+    color: $primaryColor;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}
+
+form{
+  @include flex;
+  @include flex-column;
+  input, textarea,select{
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: $primaryColor;
+    background-color: $secondaryColor;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    &[type=button]:hover{
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+  textarea{
+    height: 300px;
+  }
+  select{
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(/dist/images/icons/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 98%;
+    background-size: 25px 25px;
+  }
+}

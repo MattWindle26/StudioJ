@@ -1,0 +1,184 @@
+main{
+  section{
+    width: 100%;
+    background-color: $primaryColor;
+  &.pattern-bg{
+    background-image: url(/dist/images/pattern-bg.png);
+    background-repeat: repeat;
+    h2{
+      color: $primaryColor;
+      &:after{
+        background: rgba($primaryColor,1)!important;
+      }
+    }
+    .feature{
+      width: 100%;
+      margin: 20px 0;
+    }
+    .grid{
+      img{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+    .inner-container{
+      width: 100%;
+      padding: 20px;
+      max-width: 1440px;
+      margin: 0 auto;
+      &.items-center{
+        @include flex;
+        @include flex-column;
+      }
+      h2{
+        text-align: center;
+        &:after{
+          content: '';
+          display: block;
+          background: rgba($secondaryColor,1);
+          width: 25%;
+          max-width: 100px;
+          height: 2px;
+          margin: 15px auto 10px auto;
+        }
+      }
+      .profile-pic{
+        img{
+          display: block;
+          width: 80%;
+          max-width: 325px;
+          margin:0 auto 20px auto;
+          border-radius: 50%;
+        }
+      }
+      p{
+        text-align: center;
+      }
+    .profile-content{
+      p{
+        text-align: left;
+      }
+      .social-media{
+        margin-top: 20px;
+        img{
+          width: 50px;
+          margin-right: 10px;
+        }
+      }
+    }
+      .col-50{
+        width: 100%;
+        img{
+          margin: 15px 0;
+          width: 100%;
+        }
+        .info-box{
+          padding: 10px 0;
+          border: 2px solid $secondaryColor;
+          margin-bottom: 20px;
+          transition: all 0.25s ease-in-out;
+          &:nth-child(1){
+            margin-top: 20px;
+          }
+          &:hover{
+            background-color: rgba($secondaryColor,1);
+            p{
+              color: $primaryColor;
+            }
+          }
+          p{
+            text-align: center;
+            transition: all 0.25s ease-in-out;
+          }
+          img{
+            width: 50px;
+            display: block;
+            margin: 15px auto;
+          }
+        }
+      } //end of 50-col
+      &.products{
+        .product-header, .product-widget-wrapper{
+          margin: 0 auto;
+          width: 100%;
+          max-width: 1000px;
+          @include flex;
+          @include flex-column;
+          @include flex-justify-center;
+          @include flex-align-center;
+          .product-info-wrapper{
+            order: 2;
+            h3{
+              color: $primaryColor;
+              padding: 0 20px;
+              line-height: 4rem;
+            }
+          }
+          img{
+            order: 1;
+            width: 80%;
+            max-width: 400px;
+          }
+        }
+      .product-widget-wrapper{
+        padding: 20px;
+        .product-widget{
+          @include flex;
+          @include flex-align-center;
+          @include flex-justify-center;
+          width: 80%;
+          height: 150px;
+          background-color: $white;
+          padding: 15px;
+          -webkit-box-shadow: -8px 9px 38px -8px rgba(0,0,0,0.41);
+          -moz-box-shadow: -8px 9px 38px -8px rgba(0,0,0,0.41);
+          box-shadow: -8px 9px 38px -8px rgba(0,0,0,0.41);
+          margin-bottom: 30px;
+        }
+      }
+      }
+    }
+
+  &.fixed-bg{
+    padding: 100px 0;
+    background-image: url(/dist/images/shop-floor-opt.png);
+    background-attachment: fixed;
+    background-size: cover;
+    @include flex;
+    @include flex-justify-center;
+    @include flex-align-center;
+  }
+  &.testimonial{
+    padding: 20px 0px;
+    .testimonial-wrapper{
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    h3{
+      text-align: center;
+    }
+    img.testimonial-img{
+      object-fit: cover;
+      width: 150px;
+      height: 150px;
+      display: block;
+      margin: 20px auto 10px auto;
+      border-radius: 50%;
+    }
+    .rating-wrapper{
+      width: 100%;
+      margin: 20px 0;
+      @include flex;
+      @include flex-align-center;
+      @include flex-justify-center;
+      img.rating{
+        width: 25px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  }
+}

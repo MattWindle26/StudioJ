@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+$primaryFont: 'Montserrat', sans-serif;
+$secondaryFont:  'PT Sans', sans-serif;
+
+h1,h2,h3,h4{
+  font-family: $primaryFont;
+  color: $secondaryColor;
+  .dark{
+    color: $primaryColor;
+  }
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4.298rem;
+}
+h2 {font-size: 2.827rem;
+  letter-spacing: 2px;
+  &.title-banner{
+    width: 100%;
+    text-align: center;
+    background-color: $primaryColor;
+    padding: 50px 0 20px 0;
+    font-weight: 400;
+    font-family: $secondaryFont;
+    }
+}
+
+h3 {font-size: 1.999rem;
+  &.dark{
+    color: $primaryColor;
+    a{
+      font-size: 1.999rem;
+      color: $primaryColor;
+      font-family: $primaryFont;
+      position: relative;
+      text-decoration: underline;
+    }
+  }
+}
+
+h4 {font-size: 1.414rem;
+}
+
+p,li,span,a,input,label,textarea,select{
+  font-family: $secondaryFont;
+  color: $secondaryColor;
+  text-decoration: none;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  &.dark{
+    color: $primaryColor;
+  }
+}
+input{
+  color:$primaryColor;
+}

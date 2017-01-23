@@ -1,0 +1,76 @@
+{
+  "menu":
+  [
+      {
+          "name":"HOUSE SUNDAY SOUP",
+          "description":"House made - served with artisan bread & farm butter - mostly (V) please ask.,",
+          "price":"£4.95"
+      },
+      {
+          "name":"ANDY HOLT'S SUNDAY BLACK PUDDING",
+          "description":"Bacon jam & soft poached egg.,",
+          "price":"£5.75"
+      },
+      {
+          "name":"SUNDAY GRAVLAX,",
+          "description":"Cured with beetroot & sea salt - caper & lemon dressing",
+          "price":"£3.95"
+      },
+      {
+          "name":"TEMPURA SUNDAY PRAWNS, ",
+          "description":"Toasted corn chilli pur",
+          "price":"£5.50"
+      },
+      {
+          "name":"10oz Gammon, Eggs and Homemade Chips",
+          "description":"Juicey Gammon topped with two free ranged eggs with a side helping of homemade chips.",
+          "price":"£8.95"
+      },
+      {
+          "name":"BBQ CHICKEN STACK",
+          "description":"Chicken breast with Monterey Jack cheese, BBQ sauce, back bacon and pepper-crumb fried chicken strips. Served with grilled corn and seasoned fries.",
+          "price":"£8.95"
+      },
+      {
+          "name":"SALSA CHICKEN & PEPPER STACK",
+          "description":"A chargrilled chicken breast topped with a grilled Kapia pepper, tomato salsa and a Padron pepper. Served with sweet potato fries and sour cream dip.",
+          "price":"£6.95"
+      },
+      {
+          "name":"NACHO BURGER (V)",
+          "description":"Monterey Jack cheese, sour cream, guacamole and tomato salsa, with nachos on the side for dipping.",
+          "price":"£4.95"
+      },
+      {
+          "name":"BBQ PULLED PORK",
+          "description":"Pulled pork with grilled back bacon, onion petals and Monterey Jack cheese.",
+          "price":"£3.50"
+      },
+      {
+          "name":"FISH & CHIPS",
+          "description":"A sustainably-sourced battered cod fillet served with seasoned fries, tartare sauce and a choice of buttered peas or mushy peas.",
+          "price":"£8.95"
+      },
+      {
+          "name":"GRILLED SIGNATURE FISH & CHIPS",
+          "description":"A sustainably-sourced grilled cod fillet served with seasoned fries, tartare sauce and a choice of buttered peas or mushy peas.",
+          "price":"£6.95"
+      },
+      {
+          "name":"SUNDAY LUNCH",
+          "description":"A traditional sunday lunch with all the trimmings.",
+          "price":"From £4.95"
+      },
+      {
+          "name":"MARGHERITA STONE BAKED PIZZA",
+          "description":"vine cherry tomatoes, mozzarella, cheddar and basil (V) ",
+          "price":"£5.95"
+      },
+      {
+          "name":"8oz RUMP STEAK ",
+          "description":"Pulled pork with grilled back bacon, onion petals and Monterey Jack cheese.",
+          "price":"£3.50"
+      }
+
+  ]
+}

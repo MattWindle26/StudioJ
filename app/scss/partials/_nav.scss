@@ -1,0 +1,100 @@
+header{
+  nav{
+    @include flex;
+    @include flex-column;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background-color: $primaryColor;
+    height: 100vh;
+    padding-top: 60px;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+    z-index: 10;
+    img.side-image{
+      position: absolute;
+      right: 0;
+      top: 80px;
+      width: 100px;
+    }
+    &.open-nav{
+      right: 0%;
+    }
+    a{
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+      z-index: 999;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 2em;
+      padding: 20px;
+    }
+    .nav-social-media{
+      position: absolute;
+      bottom: 10px;
+      right:10px;
+      a{
+        padding: 0;
+        margin-right: 10px;
+      }
+      img{
+        width: 50px;
+      }
+    }
+  }
+  div.landing{
+    background-image: url(/dist/images/shop-floor-opt.png);
+    background-position: center center;
+    height: 60vh;
+    background-size: cover;
+    position: relative;
+    @include flex;
+    @include flex-column;
+    @include flex-justify-center;
+    @include flex-align-center;
+    .nav-trigger{
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 999;
+      span{
+        display: block;
+        width: 30px;
+        background-color: $secondaryColor;
+        margin-bottom: 10px;
+        height: 2px;
+      }
+    }
+    .landing-text{
+      width: 100%;
+      h1{
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-align: center;
+      }
+      h3{
+        letter-spacing: 10px;
+        font-family: $secondaryFont;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      h4{
+        font-weight: 400;
+        margin-top: 20px;
+        letter-spacing: 5px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      img{
+        width: 80px;
+        display: block;
+        margin: 0 auto 20px auto;
+      }
+    }
+    }
+}

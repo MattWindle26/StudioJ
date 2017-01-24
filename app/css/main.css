@@ -86,6 +86,21 @@ input {
 }
 
 form {
+  max-width: 860px;
+  margin: 20px auto;
+}
+form .form-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+form .form-left, form .form-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -96,8 +111,12 @@ form {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+form .form-left {
+  margin-right: 20px;
+}
 form input, form textarea, form select {
   width: 100%;
+  min-width: 420px;
   max-width: 420px;
   margin-bottom: 20px;
   padding: 10px;
@@ -106,12 +125,15 @@ form input, form textarea, form select {
   border: none;
   transition: all 0.5s ease-in-out;
 }
+form input[type=button], form textarea[type=button], form select[type=button] {
+  max-width: 100%;
+}
 form input[type=button]:hover, form textarea[type=button]:hover, form select[type=button]:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
 form textarea {
-  height: 300px;
+  height: 231px;
 }
 form select {
   position: relative;

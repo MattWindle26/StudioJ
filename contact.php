@@ -32,6 +32,24 @@
         <input name="text" type="tel" >
         <label>Your Message</label>
         <textarea name="message"></textarea>
+        <div class="form-top">
+          <div class="form-left">
+            <label>Full Name</label>
+            <input name="fullname" type="text">
+            <label>Your Stylist</label>
+            <select name="stylist" >
+              <option disabled="true" value="Choose">Choose your stylists</option>
+              <option value="Jade">Jade</option>
+              <option value="Jenna">Jenna</option>
+            </select>
+            <label>Email Address</label>
+            <input name="email" type="email" placeholder="example@email.com" >
+          </div> <!-- end of form left -->
+          <div class="form-right" >
+            <label>Your Message</label>
+            <textarea name="message"></textarea>
+          </div> <!-- end of form right -->
+        </div>
         <input type='button' name="submit" value='Send Message' >
       </form>
     </div>

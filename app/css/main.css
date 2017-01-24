@@ -109,7 +109,6 @@ form input, form textarea, form select {
 form input[type=button]:hover, form textarea[type=button]:hover, form select[type=button]:hover {
   transform: scale(1.05);
   cursor: pointer;
-  border: 2px solid red;
 }
 form textarea {
   height: 300px;

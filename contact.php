@@ -14,7 +14,7 @@
     <?php include_once $path.'/includes/header.php'; ?>
 
 <main class="" role="main" >
-  <section class="">
+  <section>
     <div class="inner-container" >
       <h2>Get in touch!</h2>
       <form method="POST" action="http://formspree.io/info@studiojburnley.co.uk" >
@@ -28,6 +28,8 @@
         </select>
         <label>Email Address</label>
         <input name="email" type="tel" placeholder="example@email.com" >
+        <label>Subject</label>
+        <input name="text" type="tel" >
         <label>Your Message</label>
         <textarea name="message"></textarea>
         <input type='button' name="submit" value='Send Message' >

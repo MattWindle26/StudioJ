@@ -676,6 +676,39 @@ footer .footer-section a.link:after {
     width: 180px;
     margin-right: 30px;
   }
+  main section .inner-container.stylist .profile-wrapper {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  main section .inner-container.stylist .profile-wrapper .profile-pic img {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+  }
+  main section .inner-container.stylist .profile-wrapper .profile-content {
+    width: 600px;
+    min-width: 420px;
+    margin-left: 20px;
+  }
+  main section .inner-container.stylist .profile-wrapper .profile-content h2 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  main section .inner-container.stylist .profile-wrapper .profile-content h2:after {
+    display: none;
+  }
 
   form .form-top {
     -webkit-box-direction: normal;

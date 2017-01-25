@@ -110,6 +110,33 @@ $desktop: "(min-width: 1440px)";
             }
           }
         } //end of products
+        &.stylist{
+          .profile-wrapper{
+            margin: 0 auto;
+            @include flex;
+            @include flex-row;
+            @include flex-justify-center;
+            .profile-pic{
+              img{
+                display: block;
+                width: 100%;
+                border-radius:0;
+              }
+            }
+            .profile-content{
+              width: 600px;
+              min-width: 420px;
+              margin-left: 20px;
+              h2{
+                text-align: left;
+                margin-bottom: 20px;
+                &:after{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
       } //end of inner-container
     } //end of main section
   }

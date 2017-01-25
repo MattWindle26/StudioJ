@@ -15,7 +15,8 @@
 
 <main class="" role="main" >
   <section >
-    <div class="inner-container" >
+    <div class="inner-container stylist" >
+      <div class="profile-wrapper" >
       <div class="profile-pic" id="profile-pic" >
         <img src="/dist/images/stylists/jade.png" alt="Portrait picture of Studio J stylist Jade Windle." >
       </div>
@@ -26,8 +27,9 @@
           <a href="https://www.facebook.com/jadestudioj/" ><img src="/dist/images/icons/facebook.svg" alt="Facebook logo" ></a>
           <a href="https://twitter.com/jadewindle" ><img src="/dist/images/icons/twitter.svg" alt="Facebook logo" ></a>
           <a href="https://www.instagram.com/jadeywindle92/" ><img src="/dist/images/icons/instagram.svg" alt="Facebook logo" ></a>
-        </div>
+        </div> <!-- end of social-media -->
       </article>
+    </div> <!-- end of profile-wrapper -->
     </div> <!-- end of inner-container -->
   </section>
   <section class="pattern-bg">

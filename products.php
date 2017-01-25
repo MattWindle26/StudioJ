@@ -18,7 +18,7 @@
     <div class="inner-container products" >
       <div class="product-header" >
         <div class="product-info-wrapper">
-          <h2>Olaplex</h3>
+          <h2>Olaplex</h2>
           <h3>95% of our clients recommend using Opalex&reg; for a long lasting new hair feel</h3>
         </div>
         <img src="/dist/images/opalex.png" alt="three bottles of opalex products" >
@@ -39,6 +39,7 @@
       </div>
       <h3 class="dark">Ask your <a href="/our-stylists.php" >stylist</a> in store for more details</h3>
     </div>
+  </section>
 </main>
 
 <?php include_once $path.'/includes/footer.php'; ?>

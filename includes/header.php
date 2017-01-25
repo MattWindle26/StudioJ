@@ -14,8 +14,8 @@
       <a href="/products.php" >Products</a>
       <a href="/contact.php" >Contact</a>
       <div class="nav-social-media" >
-        <a href="" ><img src="/dist/images/icons/facebook.svg" ></a>
-        <a href="" ><img src="/dist/images/icons/twitter.svg" ></a>
+        <a href="" ><img src="/dist/images/icons/facebook.svg" alt="Facebook logo" ></a>
+        <a href="" ><img src="/dist/images/icons/twitter.svg" alt="Twitter Logo" ></a>
       </div>
     </nav>
     <div class="landing-text" >

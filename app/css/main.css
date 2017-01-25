@@ -69,12 +69,20 @@ input {
 .button {
   background-color: #ecf0f1;
   padding: 10px 20px;
+  width: 80%;
+  max-width: 350px;
   margin: 0 auto;
-  display: inline-block;
+  display: block;
   -ms-flex-item-align: center;
   -webkit-align-self: center;
   align-self: center;
   margin-top: 40px;
+}
+.button.dark {
+  background-color: #212121;
+}
+.button.dark p {
+  color: #ecf0f1;
 }
 .button:hover {
   cursor: pointer;
@@ -86,6 +94,7 @@ input {
 }
 
 form {
+  width: 100%;
   max-width: 860px;
   margin: 20px auto;
 }
@@ -94,11 +103,11 @@ form .form-top {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -webkit-box-direction: column;
+  -webkit-box-orient: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 form .form-left, form .form-right {
   display: -webkit-box;
@@ -111,12 +120,8 @@ form .form-left, form .form-right {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-form .form-left {
-  margin-right: 20px;
-}
 form input, form textarea, form select {
   width: 100%;
-  min-width: 420px;
   max-width: 420px;
   margin-bottom: 20px;
   padding: 10px;
@@ -126,11 +131,7 @@ form input, form textarea, form select {
   transition: all 0.5s ease-in-out;
 }
 form input[type=button], form textarea[type=button], form select[type=button] {
-  max-width: 100%;
-}
-form input[type=button]:hover, form textarea[type=button]:hover, form select[type=button]:hover {
-  transform: scale(1.05);
-  cursor: pointer;
+  max-width: 420px;
 }
 form textarea {
   height: 231px;
@@ -674,5 +675,27 @@ footer .footer-section a.link:after {
   main section .inner-container.products .product-widget-wrapper .product-widget {
     width: 180px;
     margin-right: 30px;
+  }
+
+  form .form-top {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  form .form-left, form .form-right {
+    width: 50%;
+  }
+  form .form-left {
+    margin-right: 20px;
+  }
+  form input[type=button], form textarea[type=button], form select[type=button] {
+    max-width: inherit;
+    width: 100%;
+  }
+  form input[type=button]:hover, form textarea[type=button]:hover, form select[type=button]:hover {
+    cursor: pointer;
+    background-color: #bdc3c7;
   }
 }

@@ -113,5 +113,25 @@ $desktop: "(min-width: 1440px)";
       } //end of inner-container
     } //end of main section
   }
-
+  form{
+    .form-top{
+      @include flex-row;
+    }
+    .form-left, .form-right{
+      width: 50%;
+    }
+    .form-left{
+      margin-right: 20px;
+    }
+    input, textarea,select{
+      &[type=button]{
+        max-width: inherit;
+        width: 100%;
+      }
+      &[type=button]:hover{
+        cursor: pointer;
+        background-color: $tertiaryColor;
+      }
+    }
+  }
   }

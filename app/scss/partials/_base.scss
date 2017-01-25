@@ -7,10 +7,18 @@
 .button{
   background-color: $secondaryColor;
   padding: 10px 20px;
+  width: 80%;
+  max-width: 350px;
   margin:0 auto;
-  display: inline-block;
+  display: block;
   @include flex-align-self-center;
   margin-top: 40px;
+  &.dark{
+    background-color: $primaryColor;
+    p{
+      color: $secondaryColor;
+    }
+  }
   &:hover{
     cursor: pointer;
   }
@@ -22,22 +30,19 @@
 }
 
 form{
+  width: 100%;
   max-width: 860px;
   margin: 20px auto;
   .form-top{
     @include flex;
-    @include flex-row;
+    @include flex-column;
   }
   .form-left, .form-right{
     @include flex;
     @include flex-column;
   }
-  .form-left{
-    margin-right: 20px;
-  }
   input, textarea,select{
     width: 100%;
-    min-width: 420px;
     max-width: 420px;
     margin-bottom: 20px;
     padding: 10px;
@@ -46,11 +51,7 @@ form{
     border: none;
     transition: all 0.5s ease-in-out;
     &[type=button]{
-      max-width: 100%;
-    }
-    &[type=button]:hover{
-      transform: scale(1.05);
-      cursor: pointer;
+      max-width: 420px;
     }
   }
   textarea{

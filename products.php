@@ -34,10 +34,15 @@
           <p class="dark" >Restore Comprimised hair</p>
         </div>
         <div class="product-widget" >
-          <p class="dark" >The ultimate breakage insurance </p>
+          <p class="dark" >The ultimate breakage insurance</p>
         </div>
       </div>
       <h3 class="dark">Ask your <a href="/our-stylists.php" >stylist</a> in store for more details</h3>
+
+      <div class="button dark" >
+        <p>Book an appointment today!</p>
+      </div>
+      <!-- add a CTA to book appointment -->
     </div>
   </section>
 </main>

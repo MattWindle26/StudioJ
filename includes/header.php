@@ -1,6 +1,6 @@
 <header>
   <div class="landing" >
-    <div class="button book-now">
+    <div class="button small book-now">
       <p>Book Now</p>
     </div>
     <div class="nav-trigger" >

@@ -78,6 +78,15 @@ input {
   align-self: center;
   margin-top: 40px;
 }
+.button.book-now {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-top: 0px;
+}
+.button.small {
+  max-width: 150px;
+}
 .button.dark {
   background-color: #212121;
 }
@@ -237,6 +246,7 @@ header div.landing .nav-trigger span {
   height: 2px;
 }
 header div.landing .landing-text {
+  margin-top: 50px;
   width: 100%;
 }
 header div.landing .landing-text h1 {

@@ -18,7 +18,7 @@
     <div class="inner-container stylist" >
       <div class="profile-wrapper" >
       <div class="profile-pic" id="profile-pic" >
-        <img src="/dist/images/stylists/jade.png" alt="Portrait picture of Studio J stylist Jade Windle." >
+        <img src="/dist/images/stylists/jade-profile.jpg" alt="Portrait picture of Studio J stylist Jade Windle." >
       </div>
       <article class="profile-content" >
         <h2>Jade Windle</h2>

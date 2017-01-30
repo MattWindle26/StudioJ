@@ -1,5 +1,8 @@
 <header>
   <div class="landing" >
+    <div class="button book-now">
+      <p>Book Now</p>
+    </div>
     <div class="nav-trigger" >
       <span></span>
       <span></span>

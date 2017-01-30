@@ -13,7 +13,7 @@
 <?php include ('includes/header.php'); ?>
 
 <main class="" role="" >
-  <section class="col-2" >
+  <!-- <section class="col-2" >
     <div class="inner-container" >
       <div class="col-50" >
       <h2>Book an appointment</h2>
@@ -42,7 +42,7 @@
       <img class="map" src="/dist/images/map.png" alt="Google map of where StudioJ is located" >
     </div>
   </div>
-  </section>
+  </section> -->
   <section class="fixed-bg" >
     <div class="inner-container items-center" >
       <h2>Meet the stylists</h2>\

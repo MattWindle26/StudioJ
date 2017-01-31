@@ -17,6 +17,7 @@
   <section>
     <div class="inner-container" >
       <h2>Get in touch!</h2>
+      <p class="center">You can get in contact with us in a number of ways, using the contact form below, Facebook messenger - if that's your thing, email or simply give us a call.</p>
       <form method="POST" action="http://formspree.io/info@studiojburnley.co.uk" >
         <div class="form-top">
           <div class="form-left">

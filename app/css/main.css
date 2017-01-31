@@ -50,6 +50,11 @@ p, li, span, a, input, label, textarea, select {
   text-decoration: none;
   font-size: 1.75rem;
   line-height: 1.5;
+  transition: all 0.25s ease-in-out;
+}
+p.center, li.center, span.center, a.center, input.center, label.center, textarea.center, select.center {
+  max-width: 600px;
+  margin: 0 auto;
 }
 p.dark, li.dark, span.dark, a.dark, input.dark, label.dark, textarea.dark, select.dark {
   color: #212121;
@@ -131,16 +136,12 @@ form .form-left, form .form-right {
 }
 form input, form textarea, form select {
   width: 100%;
-  max-width: 420px;
   margin-bottom: 20px;
   padding: 10px;
   color: #212121;
   background-color: #ecf0f1;
   border: none;
   transition: all 0.5s ease-in-out;
-}
-form input[type=button], form textarea[type=button], form select[type=button] {
-  max-width: 420px;
 }
 form textarea {
   height: 231px;
@@ -154,6 +155,47 @@ form select {
   background-repeat: no-repeat;
   background-position: 98%;
   background-size: 25px 25px;
+}
+
+figure {
+  background-color: #ffe9e4;
+  width: 100%;
+  max-width: 320px;
+  padding: 30px 30px 10px 30px;
+  margin: 20px auto;
+  -webkit-box-shadow: -8px 9px 38px -8px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: -8px 9px 38px -8px rgba(0, 0, 0, 0.41);
+  box-shadow: -8px 9px 38px -8px rgba(0, 0, 0, 0.41);
+}
+figure img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+figure p:nth-child(1) {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+figure div.stylist-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+figure div.stylist-social-media img {
+  width: 50px;
+  margin: 5px 5px;
 }
 
 header nav {
@@ -590,6 +632,7 @@ footer .footer-section a.link:after {
     padding-top: 0px;
     position: absolute;
     top: 0;
+    left: 0;
     right: auto;
   }
   header div.landing nav img.side-image, header div.landing nav .nav-social-media {
@@ -653,6 +696,19 @@ footer .footer-section a.link:after {
   }
   main section.pattern-bg .inner-container .work-image-wrapper .grid img {
     margin-bottom: 0;
+  }
+  main section .inner-container .stylist-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 700px;
+    margin: 20px auto;
   }
   main section .inner-container.products h3 {
     text-align: center;

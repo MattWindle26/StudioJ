@@ -21,6 +21,7 @@ $desktop: "(min-width: 1440px)";
         padding-top: 0px;
         position: absolute;
         top: 0;
+        left: 0;
         right: auto;
         img.side-image,.nav-social-media{
           display: none;
@@ -87,6 +88,12 @@ $desktop: "(min-width: 1440px)";
         }
       }
       .inner-container{
+        .stylist-wrapper{
+          @include flex;
+          @include flex-row;
+          width: 700px;
+          margin: 20px auto;
+        }
         &.products{
           h3{
             text-align: center;

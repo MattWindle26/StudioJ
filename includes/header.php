@@ -12,7 +12,7 @@
       <img class="side-image" src="/dist/images/stylists/menu-scissors.png" alt="Half of a pair of scissors." >
       <a href="/index.php" >Home</a>
       <a href="#" >Who we are</a>
-      <a href="/stylists/jade.php#profile-pic" >Meet the stylists</a>
+      <a href="/meet-the-stylists.php" >Meet the stylists</a>
       <a href="#" >Services</a>
       <a href="/products.php" >Products</a>
       <a href="/contact.php" >Contact</a>

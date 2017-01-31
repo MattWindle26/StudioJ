@@ -50,6 +50,11 @@ p,li,span,a,input,label,textarea,select{
   text-decoration: none;
   font-size: 1.75rem;
   line-height: 1.5;
+  transition: all 0.25s ease-in-out;
+  &.center{
+    max-width: 600px;
+    margin: 0 auto;
+  }
   &.dark{
     color: $primaryColor;
   }

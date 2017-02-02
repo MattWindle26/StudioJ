@@ -13,7 +13,13 @@
 <?php include ('includes/header.php'); ?>
 
 <main class="" role="" >
-  <section class="col-2" >
+  <section class="hair-pattern">
+    <div class="inner-container" >
+      <h2>What we do</h2>
+      <p class="border">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+    </div>
+  </section>
+  <!-- <section class="col-2" >
     <div class="inner-container" >
       <div class="col-50" >
       <h2>Book an appointment</h2>
@@ -42,7 +48,7 @@
       <img class="map" src="/dist/images/map.png" alt="Google map of where StudioJ is located" >
     </div>
   </div>
-  </section>
+  </section> -->
   <section class="fixed-bg" >
     <div class="inner-container items-center" >
       <h2>Meet the stylists</h2>\

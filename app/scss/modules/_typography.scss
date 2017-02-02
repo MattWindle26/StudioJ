@@ -58,6 +58,25 @@ p,li,span,a,input,label,textarea,select{
   &.dark{
     color: $primaryColor;
   }
+  &.border{
+    width: 100%;
+    max-width: 660px;
+    padding: 20px;
+    border: 10px solid $secondaryColor;
+    margin: 20px auto;
+    text-align: left !important;
+    position: relative;
+    background-color: $primaryColor;
+    :after{
+      content: '';
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-color: $secondaryColor;
+      position: absolute;
+      bottom: 0;
+    }
+  }
 }
 input{
   color:$primaryColor;

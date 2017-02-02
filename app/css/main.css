@@ -59,6 +59,25 @@ p.center, li.center, span.center, a.center, input.center, label.center, textarea
 p.dark, li.dark, span.dark, a.dark, input.dark, label.dark, textarea.dark, select.dark {
   color: #212121;
 }
+p.border, li.border, span.border, a.border, input.border, label.border, textarea.border, select.border {
+  width: 100%;
+  max-width: 660px;
+  padding: 20px;
+  border: 10px solid #ecf0f1;
+  margin: 20px auto;
+  text-align: left !important;
+  position: relative;
+  background-color: #212121;
+}
+p.border :after, li.border :after, span.border :after, a.border :after, input.border :after, label.border :after, textarea.border :after, select.border :after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #ecf0f1;
+  position: absolute;
+  bottom: 0;
+}
 
 input {
   color: #212121;
@@ -339,6 +358,9 @@ main section.pattern-bg .feature {
 main section.pattern-bg .grid img {
   width: 100%;
   margin-bottom: 20px;
+}
+main section.hair-pattern {
+  background-image: url(/dist/images/hair-pattern-bg.jpg);
 }
 main section .inner-container {
   width: 100%;

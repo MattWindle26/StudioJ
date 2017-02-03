@@ -4,6 +4,11 @@
   display: -webkit-flex;
   display: flex;
 }
+@mixin inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
 @mixin flex-wrap {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;

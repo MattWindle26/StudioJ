@@ -39,6 +39,20 @@
         </div> <!-- end of top form -->
         <input type='button' name="submit" value='Send Message' >
       </form>
+      <div class="icon-wrapper" >
+        <div class="single-icons" >
+          <img src="/dist/images/icons/messenger.svg" alt="Facebook Messenger logo" title="Use facebook messenger ? So do we! Get in touch.">
+          <p class="dark">Facebook Messenger</p>
+        </div>
+        <div class="single-icons" >
+          <img src="/dist/images/icons/email-light.svg" alt="Facebook Messenger logo" title="Use facebook messenger ? So do we! Get in touch.">
+          <p class="dark">info@studiojburnley.co.uk</p>
+        </div>
+        <div class="single-icons" >
+          <img src="/dist/images/icons/phone.svg" alt="Facebook Messenger logo" title="Use facebook messenger ? So do we! Get in touch.">
+          <p class="dark">01282 123 123</p>
+        </div>
+      </div>
     </div>
   </section>
 </main>

@@ -57,6 +57,12 @@ $desktop: "(min-width: 1440px)";
   } //end of header
   main{
     section{
+      &.fixed-bg{
+        background-image: url(/dist/images/jade-bg.jpg);
+      }
+      &.hair-pattern{
+        padding-bottom: 30px;
+      }
       &.pattern-bg{
         .inner-container{
           .work-image-wrapper{

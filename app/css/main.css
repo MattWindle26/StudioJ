@@ -57,7 +57,7 @@ p.center, li.center, span.center, a.center, input.center, label.center, textarea
   margin: 0 auto;
 }
 p.dark, li.dark, span.dark, a.dark, input.dark, label.dark, textarea.dark, select.dark {
-  color: #212121;
+  color: #212121 !important;
 }
 p.border, li.border, span.border, a.border, input.border, label.border, textarea.border, select.border {
   width: 100%;
@@ -95,12 +95,11 @@ input {
   padding: 10px 20px;
   width: 80%;
   max-width: 350px;
-  margin: 0 auto;
+  margin: 20px auto;
   display: block;
   -ms-flex-item-align: center;
   -webkit-align-self: center;
   align-self: center;
-  margin-top: 40px;
 }
 .button.book-now {
   position: absolute;
@@ -270,7 +269,7 @@ header nav .nav-social-media img {
   width: 50px;
 }
 header div.landing {
-  background-image: url(/dist/images/shop-floor-opt.png);
+  background-image: url(/dist/images/bg2.jpg);
   background-position: center center;
   height: 60vh;
   background-size: cover;
@@ -361,6 +360,7 @@ main section.pattern-bg .grid img {
 }
 main section.hair-pattern {
   background-image: url(/dist/images/hair-pattern-bg.jpg);
+  border: 10px solid #212121;
 }
 main section .inner-container {
   width: 100%;
@@ -400,6 +400,43 @@ main section .inner-container .profile-pic img {
 }
 main section .inner-container p {
   text-align: center;
+}
+main section .inner-container .icon-wrapper {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+main section .inner-container .icon-wrapper .single-icons {
+  background-color: #ecf0f1;
+  padding: 10px 20px 10px 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: calc(830px /3);
+}
+main section .inner-container .icon-wrapper .single-icons:last-child {
+  margin-right: 0;
+}
+main section .inner-container .icon-wrapper .single-icons img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
 }
 main section .inner-container .profile-content p {
   text-align: left;
@@ -504,7 +541,7 @@ main section .inner-container.products .product-widget-wrapper .product-widget {
 }
 main section.fixed-bg {
   padding: 100px 0;
-  background-image: url(/dist/images/shop-floor-opt.png);
+  background-image: url(/dist/images/jade-bg-mob.jpg);
   background-attachment: fixed;
   background-size: cover;
   display: -webkit-box;
@@ -684,6 +721,12 @@ footer .footer-section a.link:after {
     margin: 10px auto 0 auto;
   }
 
+  main section.fixed-bg {
+    background-image: url(/dist/images/jade-bg.jpg);
+  }
+  main section.hair-pattern {
+    padding-bottom: 30px;
+  }
   main section.pattern-bg .inner-container .work-image-wrapper {
     width: 70%;
     margin: 20px auto 0 auto;

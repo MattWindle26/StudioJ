@@ -9,10 +9,9 @@
   padding: 10px 20px;
   width: 80%;
   max-width: 350px;
-  margin:0 auto;
+  margin:20px auto;
   display: block;
   @include flex-align-self-center;
-  margin-top: 40px;
   &.book-now{
     position: absolute;
     top:10px;

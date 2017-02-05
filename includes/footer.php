@@ -1,8 +1,10 @@
 <footer>
   <div class="footer-section">
-    <a href="http://www.facebook.com" ><img src="/dist/images/icons/facebook-dark.svg" alt="Facebook Icon" ></a>
-    <a href="" ><img src="/dist/images/icons/twitter-dark.svg" alt="Twitter Icon"></a>
-    <a href="" ><img src="/dist/images/icons/instagram-dark.svg" alt="Instagram Icon" ></a>
+    <div class="social-media center" >
+      <a href="http://www.facebook.com" ><img src="/dist/images/icons/facebook-dark.svg" alt="Facebook Icon" ></a>
+      <a href="" ><img src="/dist/images/icons/twitter-dark.svg" alt="Twitter Icon"></a>
+      <a href="" ><img src="/dist/images/icons/instagram-dark.svg" alt="Instagram Icon" ></a>
+    </div>
   </div>
   <div class="footer-section">
     <p>01282 123 456</p>

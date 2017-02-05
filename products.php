@@ -19,7 +19,7 @@
       <div class="product-header" >
         <div class="product-info-wrapper">
           <h2>Olaplex</h2>
-          <h3>95% of our clients recommend using Opalex&reg; for a long lasting new hair feel</h3>
+          <h3>Hair that never seems to grow? Olaplex is your solution! 95% of clients recommend Olaplex for hair growth and healthier hair!</h3>
         </div>
         <img src="/dist/images/opalex.png" alt="three bottles of opalex products" >
       </div> <!-- end of product header -->

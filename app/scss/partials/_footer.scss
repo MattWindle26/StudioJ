@@ -4,19 +4,6 @@ footer{
   .footer-section{
     margin-bottom: 20px;
     text-align: center;
-    &:nth-child(1){
-      @include flex;
-      @include flex-justify-center;
-      img{
-        width: 50px;
-        height: 50px;
-        margin: 0 10px;
-        transition: all 0.25s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-        }
-      }
-    }
     p{
       color: #372528;
       &.copy{

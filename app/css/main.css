@@ -44,7 +44,7 @@ h4 {
   font-size: 1.414rem;
 }
 
-p, li, span, a, input, label, textarea, select {
+p, li, span, a, input, label, textarea, select, blockquote {
   font-family: "PT Sans", sans-serif;
   color: #ecf0f1;
   text-decoration: none;
@@ -52,14 +52,14 @@ p, li, span, a, input, label, textarea, select {
   line-height: 1.5;
   transition: all 0.25s ease-in-out;
 }
-p.center, li.center, span.center, a.center, input.center, label.center, textarea.center, select.center {
+p.center, li.center, span.center, a.center, input.center, label.center, textarea.center, select.center, blockquote.center {
   max-width: 600px;
   margin: 0 auto;
 }
-p.dark, li.dark, span.dark, a.dark, input.dark, label.dark, textarea.dark, select.dark {
+p.dark, li.dark, span.dark, a.dark, input.dark, label.dark, textarea.dark, select.dark, blockquote.dark {
   color: #212121 !important;
 }
-p.border, li.border, span.border, a.border, input.border, label.border, textarea.border, select.border {
+p.border, li.border, span.border, a.border, input.border, label.border, textarea.border, select.border, blockquote.border {
   width: 100%;
   max-width: 660px;
   padding: 20px;
@@ -69,7 +69,7 @@ p.border, li.border, span.border, a.border, input.border, label.border, textarea
   position: relative;
   background-color: #212121;
 }
-p.border :after, li.border :after, span.border :after, a.border :after, input.border :after, label.border :after, textarea.border :after, select.border :after {
+p.border :after, li.border :after, span.border :after, a.border :after, input.border :after, label.border :after, textarea.border :after, select.border :after, blockquote.border :after {
   content: '';
   display: block;
   width: 50px;
@@ -175,45 +175,27 @@ form select {
   background-size: 25px 25px;
 }
 
-figure {
-  background-color: #ffe9e4;
-  width: 100%;
-  max-width: 320px;
-  padding: 30px 30px 10px 30px;
-  margin: 20px auto;
-  -webkit-box-shadow: -8px 9px 38px -8px rgba(0, 0, 0, 0.41);
-  -moz-box-shadow: -8px 9px 38px -8px rgba(0, 0, 0, 0.41);
-  box-shadow: -8px 9px 38px -8px rgba(0, 0, 0, 0.41);
-}
-figure img {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
-figure p:nth-child(1) {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 800;
-}
-figure div.stylist-social-media {
+.social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+}
+.social-media img {
+  width: 50px;
+  height: 50px;
+  transition: all 0.25s ease-in-out;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.social-media img:hover {
+  transform: scale(1.1);
+}
+.social-media.center {
   -webkit-justify-content: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-figure div.stylist-social-media img {
-  width: 50px;
-  margin: 5px 5px;
 }
 
 header nav {
@@ -339,6 +321,7 @@ header div.landing .landing-text img {
 main section {
   width: 100%;
   background-color: #212121;
+  padding: 50px 0px;
 }
 main section.pattern-bg {
   background-image: url(/dist/images/pattern-bg.png);
@@ -405,14 +388,6 @@ main section .inner-container .icon-wrapper {
   width: 100%;
   max-width: 860px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-between;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 main section .inner-container .icon-wrapper .single-icons {
   background-color: #ecf0f1;
@@ -424,11 +399,8 @@ main section .inner-container .icon-wrapper .single-icons {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-justify-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-width: calc(830px /3);
+  min-width: 100%;
+  margin-bottom: 2rem;
 }
 main section .inner-container .icon-wrapper .single-icons:last-child {
   margin-right: 0;
@@ -437,6 +409,9 @@ main section .inner-container .icon-wrapper .single-icons img {
   width: 40px;
   height: 40px;
   margin-right: 20px;
+}
+main section .inner-container .icon-wrapper .single-icons p {
+  word-wrap: break-word;
 }
 main section .inner-container .profile-content p {
   text-align: left;
@@ -447,37 +422,6 @@ main section .inner-container .profile-content .social-media {
 main section .inner-container .profile-content .social-media img {
   width: 50px;
   margin-right: 10px;
-}
-main section .inner-container .col-50 {
-  width: 100%;
-}
-main section .inner-container .col-50 img {
-  margin: 15px 0;
-  width: 100%;
-}
-main section .inner-container .col-50 .info-box {
-  padding: 10px 0;
-  border: 2px solid #ecf0f1;
-  margin-bottom: 20px;
-  transition: all 0.25s ease-in-out;
-}
-main section .inner-container .col-50 .info-box:nth-child(1) {
-  margin-top: 20px;
-}
-main section .inner-container .col-50 .info-box:hover {
-  background-color: #ecf0f1;
-}
-main section .inner-container .col-50 .info-box:hover p {
-  color: #212121;
-}
-main section .inner-container .col-50 .info-box p {
-  text-align: center;
-  transition: all 0.25s ease-in-out;
-}
-main section .inner-container .col-50 .info-box img {
-  width: 50px;
-  display: block;
-  margin: 15px auto;
 }
 main section .inner-container.products .product-header, main section .inner-container.products .product-widget-wrapper {
   margin: 0 auto;
@@ -539,6 +483,81 @@ main section .inner-container.products .product-widget-wrapper .product-widget {
   box-shadow: -8px 9px 38px -8px rgba(0, 0, 0, 0.41);
   margin-bottom: 30px;
 }
+main section .inner-container article.col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -webkit-box-direction: column;
+  -webkit-box-orient: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border: 10px solid #212121;
+}
+main section .inner-container article.col-2 .col-50 {
+  min-height: 300px;
+  flex: 1;
+}
+main section .inner-container article.col-2 .col-50.image {
+  background-size: cover;
+  background-position: center center;
+}
+main section .inner-container article.col-2 .col-50.image:nth-child(1) {
+  background-image: url(/dist/images/stylists/jade-scissors.jpg);
+}
+main section .inner-container article.col-2 .col-50.image:nth-child(2) {
+  background-image: url(/dist/images/stylists/jade.jpg);
+}
+main section .inner-container article.col-2 .col-50.text {
+  background-color: #212121;
+  padding: 20px;
+}
+main section .inner-container article.col-2 .col-50.text h2, main section .inner-container article.col-2 .col-50.text h3 {
+  color: #ecf0f1;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+main section .inner-container article.col-2 .col-50.text h3:nth-of-type(2) {
+  text-align: center;
+}
+main section .inner-container article.col-2 .col-50.text p {
+  text-align: left;
+}
+main section .inner-container article.col-2 .col-50.text blockquote {
+  color: #ecf0f1;
+  position: relative;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+main section .inner-container article.col-2 .col-50.text blockquote:before {
+  content: '\201C';
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+main section .inner-container article.col-2 .col-50.text blockquote:after {
+  position: absolute;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  content: '\201D';
+  display: block;
+  font-size: 70px;
+  margin-top: -20px;
+}
+main section .inner-container article.col-2 .col-50.text .button {
+  margin-top: 50px;
+}
+main section .inner-container article.col-2 .col-50.text .button p {
+  text-align: center;
+}
 main section.fixed-bg {
   padding: 100px 0;
   background-image: url(/dist/images/jade-bg-mob.jpg);
@@ -556,9 +575,6 @@ main section.fixed-bg {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-main section.testimonial {
-  padding: 20px 0px;
 }
 main section.testimonial .testimonial-wrapper {
   width: 100%;
@@ -604,25 +620,6 @@ footer {
 footer .footer-section {
   margin-bottom: 20px;
   text-align: center;
-}
-footer .footer-section:nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-footer .footer-section:nth-child(1) img {
-  width: 50px;
-  height: 50px;
-  margin: 0 10px;
-  transition: all 0.25s ease-in-out;
-}
-footer .footer-section:nth-child(1) img:hover {
-  transform: scale(1.1);
 }
 footer .footer-section p {
   color: #372528;
@@ -762,18 +759,43 @@ footer .footer-section a.link:after {
   main section.pattern-bg .inner-container .work-image-wrapper .grid img {
     margin-bottom: 0;
   }
-  main section .inner-container .stylist-wrapper {
+  main section .inner-container .icon-wrapper {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-box-direction: normal;
-    -webkit-box-orient: horizontal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    width: 700px;
-    margin: 20px auto;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  main section .inner-container .icon-wrapper .single-icons {
+    background-color: #ecf0f1;
+    padding: 10px 20px 10px 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: calc(96% /3);
+    margin-right: 2% 0;
+  }
+  main section .inner-container .icon-wrapper .single-icons:last-child {
+    margin-right: 0;
+  }
+  main section .inner-container .icon-wrapper .single-icons img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
   }
   main section .inner-container.products h3 {
     text-align: center;
@@ -807,8 +829,7 @@ footer .footer-section a.link:after {
     width: 180px;
     margin-right: 30px;
   }
-  main section .inner-container.stylist .profile-wrapper {
-    margin: 0 auto;
+  main section .inner-container article.col-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -818,27 +839,70 @@ footer .footer-section a.link:after {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-justify-content: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-  main section .inner-container.stylist .profile-wrapper .profile-pic img {
-    display: block;
     width: 100%;
-    border-radius: 0;
+    max-width: 1000px;
+    margin: 20px auto;
+    border: 10px solid #212121;
   }
-  main section .inner-container.stylist .profile-wrapper .profile-content {
-    width: 600px;
-    min-width: 420px;
-    margin-left: 20px;
+  main section .inner-container article.col-2 .col-50 {
+    height: 500px;
+    flex: 1;
   }
-  main section .inner-container.stylist .profile-wrapper .profile-content h2 {
+  main section .inner-container article.col-2 .col-50.image {
+    background-size: cover;
+    background-position: center center;
+  }
+  main section .inner-container article.col-2 .col-50.image:nth-child(1) {
+    background-image: url(/dist/images/stylists/jade-scissors.jpg);
+  }
+  main section .inner-container article.col-2 .col-50.image:nth-child(2) {
+    background-image: url(/dist/images/stylists/jade.jpg);
+  }
+  main section .inner-container article.col-2 .col-50.text {
+    background-color: #212121;
+    padding: 20px;
+  }
+  main section .inner-container article.col-2 .col-50.text h2 {
+    color: #ecf0f1;
     text-align: left;
-    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
   }
-  main section .inner-container.stylist .profile-wrapper .profile-content h2:after {
-    display: none;
+  main section .inner-container article.col-2 .col-50.text h3 {
+    text-align: center;
+  }
+  main section .inner-container article.col-2 .col-50.text p {
+    text-align: left;
+  }
+  main section .inner-container article.col-2 .col-50.text blockquote {
+    color: #ecf0f1;
+    position: relative;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+  main section .inner-container article.col-2 .col-50.text blockquote:before {
+    content: '\201C';
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 70px;
+    margin-bottom: 15px;
+  }
+  main section .inner-container article.col-2 .col-50.text blockquote:after {
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    content: '\201D';
+    display: block;
+    font-size: 70px;
+    margin-top: -20px;
+  }
+  main section .inner-container article.col-2 .col-50.text .button {
+    margin-top: 50px;
+  }
+  main section .inner-container article.col-2 .col-50.text .button p {
+    text-align: center;
   }
 
   form .form-top {

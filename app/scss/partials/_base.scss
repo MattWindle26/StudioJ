@@ -73,35 +73,19 @@ form{
   }
 }
 
-figure{
-  background-color:#ffe9e4;
-  width: 100%;
-  max-width: 320px;
-  padding: 30px 30px 10px 30px;
-  margin: 20px auto;
-  -webkit-box-shadow: -8px 9px 38px -8px rgba(0,0,0,0.41);
-  -moz-box-shadow: -8px 9px 38px -8px rgba(0,0,0,0.41);
-  box-shadow: -8px 9px 38px -8px rgba(0,0,0,0.41);
-  img{
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-  p{
-    &:nth-child(1){
-      font-family: $primaryFont;
-      font-size: 2.5rem;
-      font-weight: 800;
-    }
-  }
-  div.stylist-social-media{
+.social-media{
     @include flex;
-    @include flex-row;
-    @include flex-justify-center;
     img{
       width: 50px;
-      margin: 5px 5px;
+      height: 50px;
+      transition: all 0.25s ease-in-out;
+      margin-right: 10px;
+      margin-top: 10px;
+      &:hover{
+        transform: scale(1.1);
+      }
     }
-  }
+&.center{
+  @include flex-justify-center;
+}
 }

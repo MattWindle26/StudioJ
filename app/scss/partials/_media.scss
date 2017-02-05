@@ -94,11 +94,29 @@ $desktop: "(min-width: 1440px)";
         }
       }
       .inner-container{
-        .stylist-wrapper{
+        .icon-wrapper{
+          width: 100%;
+          max-width: 860px;
+          margin: 0 auto;
           @include flex;
-          @include flex-row;
-          width: 700px;
-          margin: 20px auto;
+          @include flex-space-between;
+          .single-icons{
+            background-color: $secondaryColor;
+            padding: 10px 20px 10px 10px;
+            @include inline-flex;
+            @include flex-align-center;
+            @include flex-justify-center;
+            min-width: calc(96% /3);
+            margin-right: 2% 0;
+            &:last-child{
+              margin-right: 0;
+            }
+            img{
+              width: 40px;
+              height: 40px;
+              margin-right: 20px;
+            }
+          }
         }
         &.products{
           h3{
@@ -123,28 +141,69 @@ $desktop: "(min-width: 1440px)";
             }
           }
         } //end of products
-        &.stylist{
-          .profile-wrapper{
-            margin: 0 auto;
-            @include flex;
-            @include flex-row;
-            @include flex-justify-center;
-            .profile-pic{
-              img{
-                display: block;
-                width: 100%;
-                border-radius:0;
+        article.col-2{
+          @include flex;
+          @include flex-row;
+          width: 100%;
+          max-width: 1000px;
+          margin: 20px auto;
+          border: 10px solid $primaryColor;
+          .col-50{
+            height: 500px;
+            flex: 1;
+            &.image{
+              background-size: cover;
+              background-position: center center;
+              &:nth-child(1){
+                background-image: url(/dist/images/stylists/jade-scissors.jpg);
+              }
+              &:nth-child(2){
+                background-image: url(/dist/images/stylists/jade.jpg);
               }
             }
-            .profile-content{
-              width: 600px;
-              min-width: 420px;
-              margin-left: 20px;
+            &.text{
+              background-color: $primaryColor;
+              padding: 20px;
               h2{
+                color: $secondaryColor;
                 text-align: left;
-                margin-bottom: 20px;
+                margin: 0;
+                padding: 0;
+              }
+              h3{
+                  text-align: center;
+              }
+              p{
+                text-align: left;
+              }
+              blockquote{
+                color: $secondaryColor;
+                position: relative;
+                font-style: italic;
+                margin-bottom: 40px;
+                &:before{
+                  content: '\201C';
+                  display: block;
+                  width: 30px;
+                  height: 30px;
+                  font-size: 70px;
+                  margin-bottom: 15px;
+                }
                 &:after{
-                  display: none;
+                  position: absolute;
+                  right: 20px;
+                  width: 30px;
+                  height: 30px;
+                  content: '\201D';
+                  display: block;
+                  font-size: 70px;
+                  margin-top: -20px;
+                }
+              }
+              .button{
+                margin-top: 50px;
+                p{
+                  text-align: center;
                 }
               }
             }
@@ -175,3 +234,5 @@ $desktop: "(min-width: 1440px)";
     }
   }
   }
+@media #{$laptop}{
+}

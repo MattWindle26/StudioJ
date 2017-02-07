@@ -58,26 +58,22 @@ p,li,span,a,input,label,textarea,select,blockquote{
   &.dark{
     color: $primaryColor !important;
   }
-  &.border{
-    width: 100%;
-    max-width: 660px;
-    padding: 20px;
-    border: 10px solid $secondaryColor;
-    margin: 20px auto;
-    text-align: left !important;
-    position: relative;
-    background-color: $primaryColor;
-    :after{
-      content: '';
-      display: block;
-      width: 50px;
-      height: 50px;
-      background-color: $secondaryColor;
-      position: absolute;
-      bottom: 0;
-    }
-  }
+}
+p{
+  margin-bottom: 15px;
 }
 input{
   color:$primaryColor;
+}
+.border{
+  width: 100%;
+  max-width: 660px;
+  padding: 20px;
+  border: 10px solid $secondaryColor;
+  margin: 20px auto;
+  position: relative;
+  background-color: $primaryColor;
+  p{
+    text-align: left !important;
+  }
 }

@@ -145,7 +145,6 @@ main{
         border: 10px solid $primaryColor;
         .col-50{
           min-height: 300px;
-          flex: 1;
           &.image{
             background-size: cover;
             background-position: center center;
@@ -157,13 +156,14 @@ main{
             }
           }
           &.text{
+            @include flex;
+            @include flex-column;
+            @include flex-align-center;
             background-color: $primaryColor;
             padding: 20px;
             h2,h3{
               color: $secondaryColor;
-              text-align: left;
-              margin: 0;
-              padding: 0;
+              text-align: center;
             }
             h3{
               &:nth-of-type(2){

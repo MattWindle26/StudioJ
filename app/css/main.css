@@ -59,28 +59,26 @@ p.center, li.center, span.center, a.center, input.center, label.center, textarea
 p.dark, li.dark, span.dark, a.dark, input.dark, label.dark, textarea.dark, select.dark, blockquote.dark {
   color: #212121 !important;
 }
-p.border, li.border, span.border, a.border, input.border, label.border, textarea.border, select.border, blockquote.border {
+
+p {
+  margin-bottom: 15px;
+}
+
+input {
+  color: #212121;
+}
+
+.border {
   width: 100%;
   max-width: 660px;
   padding: 20px;
   border: 10px solid #ecf0f1;
   margin: 20px auto;
-  text-align: left !important;
   position: relative;
   background-color: #212121;
 }
-p.border :after, li.border :after, span.border :after, a.border :after, input.border :after, label.border :after, textarea.border :after, select.border :after, blockquote.border :after {
-  content: '';
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: #ecf0f1;
-  position: absolute;
-  bottom: 0;
-}
-
-input {
-  color: #212121;
+.border p {
+  text-align: left !important;
 }
 
 * {
@@ -123,6 +121,7 @@ input {
   color: #212121;
   text-align: center;
   letter-spacing: 2px;
+  margin-bottom: 0;
 }
 
 form {
@@ -196,6 +195,44 @@ form select {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+ul.dotted-list {
+  list-style-type: none;
+  background-color: #212121;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+ul.dotted-list li {
+  overflow: hidden;
+  margin: 0 0 10px 0;
+  position: relative;
+  color: #ecf0f1;
+}
+ul.dotted-list li span:first-child {
+  float: left;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  z-index: 10;
+  position: relative;
+  color: #ecf0f1;
+  background-color: #212121;
+}
+ul.dotted-list li span + span {
+  float: right;
+  display: inline-block;
+  padding: 0 3px 0 20px;
+  z-index: 10;
+  position: relative;
+  color: #ecf0f1;
+  background-color: #212121;
+}
+ul.dotted-list li:before {
+  content: ".......................................................................................................................................................................................................................................................................................................................................................";
+  white-space: nowrap;
+  position: absolute;
 }
 
 header nav {
@@ -500,7 +537,6 @@ main section .inner-container article.col-2 {
 }
 main section .inner-container article.col-2 .col-50 {
   min-height: 300px;
-  flex: 1;
 }
 main section .inner-container article.col-2 .col-50.image {
   background-size: cover;
@@ -513,14 +549,25 @@ main section .inner-container article.col-2 .col-50.image:nth-child(2) {
   background-image: url(/dist/images/stylists/jade.jpg);
 }
 main section .inner-container article.col-2 .col-50.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -webkit-box-direction: column;
+  -webkit-box-orient: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #212121;
   padding: 20px;
 }
 main section .inner-container article.col-2 .col-50.text h2, main section .inner-container article.col-2 .col-50.text h3 {
   color: #ecf0f1;
-  text-align: left;
-  margin: 0;
-  padding: 0;
+  text-align: center;
 }
 main section .inner-container article.col-2 .col-50.text h3:nth-of-type(2) {
   text-align: center;
@@ -659,6 +706,11 @@ footer .footer-section a.link:after {
   transition: all 0.25s ease-in-out;
 }
 
+@media (min-width: 600px) {
+  main section .inner-container article.col-2 {
+    width: 70%;
+  }
+}
 @media (min-width: 768px) {
   header {
     background-color: pink;
@@ -829,6 +881,39 @@ footer .footer-section a.link:after {
     width: 180px;
     margin-right: 30px;
   }
+  main section .inner-container.stylist .profile-wrapper {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  main section .inner-container.stylist .profile-wrapper .profile-pic img {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+  }
+  main section .inner-container.stylist .profile-wrapper .profile-content {
+    width: 600px;
+    min-width: 420px;
+    margin-left: 20px;
+  }
+  main section .inner-container.stylist .profile-wrapper .profile-content h2 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  main section .inner-container.stylist .profile-wrapper .profile-content h2:after {
+    display: none;
+  }
   main section .inner-container article.col-2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -841,12 +926,14 @@ footer .footer-section a.link:after {
     flex-direction: row;
     width: 100%;
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     border: 10px solid #212121;
   }
   main section .inner-container article.col-2 .col-50 {
-    height: 500px;
-    flex: 1;
+    height: 300px;
+  }
+  main section .inner-container article.col-2 .col-50:nth-child(1) {
+    flex: 2;
   }
   main section .inner-container article.col-2 .col-50.image {
     background-size: cover;
@@ -859,20 +946,7 @@ footer .footer-section a.link:after {
     background-image: url(/dist/images/stylists/jade.jpg);
   }
   main section .inner-container article.col-2 .col-50.text {
-    background-color: #212121;
-    padding: 20px;
-  }
-  main section .inner-container article.col-2 .col-50.text h2 {
-    color: #ecf0f1;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-  }
-  main section .inner-container article.col-2 .col-50.text h3 {
-    text-align: center;
-  }
-  main section .inner-container article.col-2 .col-50.text p {
-    text-align: left;
+    min-width: 350px;
   }
   main section .inner-container article.col-2 .col-50.text blockquote {
     color: #ecf0f1;

@@ -34,6 +34,7 @@
     color: $primaryColor;
     text-align: center;
     letter-spacing: 2px;
+    margin-bottom: 0;
   }
 }
 
@@ -88,4 +89,43 @@ form{
 &.center{
   @include flex-justify-center;
 }
+}
+
+
+ul.dotted-list{
+  list-style-type: none;
+  background-color: $primaryColor;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  li{
+    overflow: hidden;
+    margin: 0 0 10px 0;
+    position: relative;
+    color: $secondaryColor;
+    span:first-child {
+      float: left;
+      display: inline-block;
+      padding: 0 20px 0 0;
+      z-index: 10;
+      position: relative;
+      color: $secondaryColor;
+      background-color: $primaryColor;
+      }
+    span + span {
+      float: right;
+      display: inline-block;
+      padding: 0 3px 0 20px;
+      z-index: 10;
+      position: relative;
+      color: $secondaryColor;
+      background-color: $primaryColor;
+      }
+    &:before {
+      content: ".......................................................................................................................................................................................................................................................................................................................................................";
+      white-space: nowrap;
+      position: absolute;
+    }
+  }
 }

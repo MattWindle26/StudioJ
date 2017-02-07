@@ -38,11 +38,11 @@
         </div>
       </div>
       <h3 class="dark">Ask your <a href="/our-stylists.php" >stylist</a> in store for more details</h3>
-
-      <div class="button dark" >
-        <p>Book an appointment today!</p>
-      </div>
-      <!-- add a CTA to book appointment -->
+      <a href="/contact.php" >
+        <div class="button dark" >
+          <p>Book an appointment today!</p>
+        </div>
+      </a>
     </div>
   </section>
 </main>

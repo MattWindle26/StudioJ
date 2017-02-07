@@ -16,39 +16,12 @@
   <section class="hair-pattern">
     <div class="inner-container" >
       <h2>What we do</h2>
-      <p class="border">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+      <div class="border" >
+        <p>Hi! We are Jade Windle and Jenna Bryne, co-owners of StudioJ in Burnley with a passion for styling hair. We believe that making others feel better about themselves with a top of the line haircut is one of the most rewarding factors about out job.</p>
+        <p>So why not treat yourself and pop down to StudioJ or <a href="/contact.php" >book an appointment</a></p>
+      </div>
     </div>
   </section>
-  <!-- <section class="col-2" >
-    <div class="inner-container" >
-      <div class="col-50" >
-      <h2>Book an appointment</h2>
-      <p>It couldn't be easier to book an appointment </p>
-      <a href="" >
-        <div class="info-box" >
-          <img src="/dist/images/icons/phone-light.svg" alt="" title="" >
-          <p>01282 123 456</p>
-        </div>
-      </a>
-      <a href="" >
-        <div class="info-box">
-          <img src="/dist/images/icons/email-light.svg" alt="" title="" >
-          <p>info@studiojburnley.co.uk</p>
-        </div>
-      </a>
-      <a href="http://m.me/studiojburnley" >
-        <div class="info-box">
-          <img src="/dist/images/icons/facebook-circle-light.svg" alt="" title="Book an appointment on Facebook!" >
-          <p>Message us on Facebook</p>
-        </div>
-      </a>
-    </div>
-      <div class="col-50" >
-      <h2>Where to find us!</h2>
-      <img class="map" src="/dist/images/map.png" alt="Google map of where StudioJ is located" >
-    </div>
-  </div>
-  </section> -->
   <section class="fixed-bg" >
     <div class="inner-container items-center" >
       <h2>Meet the stylists</h2>\

@@ -4,6 +4,12 @@ $tablet: "(min-width: 768px)";
 $laptop: "(min-width: 1024px)";
 $desktop: "(min-width: 1440px)";
 
+@media #{$small-tablet} {
+main section .inner-container article.col-2{
+    width: 70%;
+  }
+}
+
 
 @media #{$tablet} {
   header{
@@ -141,16 +147,45 @@ $desktop: "(min-width: 1440px)";
             }
           }
         } //end of products
+        &.stylist{
+          .profile-wrapper{
+            margin: 0 auto;
+            @include flex;
+            @include flex-row;
+            @include flex-justify-center;
+            .profile-pic{
+              img{
+                display: block;
+                width: 100%;
+                border-radius:0;
+              }
+            }
+            .profile-content{
+              width: 600px;
+              min-width: 420px;
+              margin-left: 20px;
+              h2{
+                text-align: left;
+                margin-bottom: 20px;
+                &:after{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
         article.col-2{
           @include flex;
           @include flex-row;
           width: 100%;
           max-width: 1000px;
-          margin: 20px auto;
+          margin: 20px auto 0 auto;
           border: 10px solid $primaryColor;
           .col-50{
-            height: 500px;
-            flex: 1;
+            height: 300px;
+            &:nth-child(1){
+              flex:2;
+            }
             &.image{
               background-size: cover;
               background-position: center center;
@@ -162,20 +197,7 @@ $desktop: "(min-width: 1440px)";
               }
             }
             &.text{
-              background-color: $primaryColor;
-              padding: 20px;
-              h2{
-                color: $secondaryColor;
-                text-align: left;
-                margin: 0;
-                padding: 0;
-              }
-              h3{
-                  text-align: center;
-              }
-              p{
-                text-align: left;
-              }
+              min-width: 350px;
               blockquote{
                 color: $secondaryColor;
                 position: relative;

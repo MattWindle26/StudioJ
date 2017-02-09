@@ -22,7 +22,9 @@
       </div>
       <article class="profile-content" >
         <h2>Jade Windle</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>I have been a level 3 qualified hairdresser for almost 8 years now, I absolutely love what I do, most days it is more of a passion than a job to me, making somebody feel confident when they walk out of the salon is what makes me feel happy and it's what makes me keep doing what I do. </p>
+
+        <p>I have been Co-owner of StudioJ for almost 4 years now and I would never look back, it's the best thing I have never done, I see long term future in the salon and we always keep the salon fresh and modern and we will always continue to learn new techniques to keep up with trending fashion</p>
         <div class="social-media" >
           <a href="https://www.facebook.com/jadestudioj/" ><img src="/dist/images/icons/facebook.svg" alt="Facebook logo" ></a>
           <a href="https://twitter.com/jadewindle" ><img src="/dist/images/icons/twitter.svg" alt="Facebook logo" ></a>
@@ -45,17 +47,35 @@
             <img src="/dist/images/work/curly-hair.jpg" >
           </div>
           <div class="cell">
-            <img src="/dist/images/work/curly-hair.jpg" >
+            <img src="/dist/images/work/blonde-curls.jpg" >
           </div>
           <div class="cell">
-            <img src="/dist/images/work/curly-hair.jpg" >
+            <img src="/dist/images/work/blonde-straight.jpg" >
           </div>
           <div class="cell">
-            <img src="/dist/images/work/curly-hair.jpg" >
+            <img src="/dist/images/work/mirrored-image.jpg" >
           </div>
         </div>
       </div>
       </article>
+    </div>
+  </section>
+  <section class="hair-pattern">
+    <div class="inner-container" >
+      <h2>Price List</h2>
+      <ul class="dotted-list">
+        <li><span>Trim</span><span>£5.90</span></li>
+        <li><span>Shampoo, Cut &amp; Finish </span><span>* £8.30</span></li>
+        <li><span>Roots</span><span>* £9.30 </span></li>
+        <li><span>Full Colour</span><span>* £9.30 </span></li>
+        <li><span>Half Head of Foils</span><span>* £9.80 </span></li>
+        <li><span>Full Head of Foils</span><span>* £10.40 </span></li>
+        <li><span>Ombre/Balyage</span><span>* £10.40 </span></li>
+        <li><span>Pin Up/Styling</span><span>* £10.40 </span></li>
+        <li><span>Olaplex</span><span>£10.40 </span></li>
+      </ul>
+      <p>* These services are dependant on hair length and colour, so prices may vary, for more information <a href="/contact.php" >contact us</a></p>
+
     </div>
   </section>
   <section class="testimonial">
@@ -64,7 +84,7 @@
       <?php
         $jsondata = file_get_contents($path.'/facebook.json');
         $json = json_decode($jsondata, true);
-        $rand = rand(0,8);
+        $rand = rand(0,14);
         $rating = $json['data'][$rand]['rating'];
         $url =" http://graph.facebook.com/" . $json['data'][$rand]['reviewer']['id'] . "/picture?type=large";
         echo "<div class='testimonial-wrapper'>";

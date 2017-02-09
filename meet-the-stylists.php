@@ -16,28 +16,24 @@
   <section class="pattern-bg" >
     <div class="inner-container" >
       <h2>Meet the stylists</h2>
-      <p class="dark center" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      <p class="dark center" >Each of our stylists' specialise in specific styles and treatments and have their own set of prices. Our stylists have a profile with all the information required.  </p>
       <article class="col-2" >
         <div class="col-50 image">
         </div>
         <div class="col-50 text" >
-          <h2>Jade Windle<span>Hair Stylists &amp; Co-Owner</span></h2>
-          <blockquote>
-            <p>I specialise in Full Colour, Highlights, Root Stretch, Ombre and Balayage hairstyles. To see more of what I do and what my clients say, visit my page.</p>
-          </blockquote>
-          <h3>Catch me on social media</h3>
-          <div class="social-media center" >
+          <h2>Jade Windle<br><span>Hair Stylists &amp; Co-Owner</span></h2>
+          <div class="social-media" >
             <a href="http://www.facebook.com" ><img src="/dist/images/icons/facebook.svg" alt="Facebook Icon" ></a>
             <a href="" ><img src="/dist/images/icons/twitter.svg" alt="Twitter Icon"></a>
             <a href="" ><img src="/dist/images/icons/instagram.svg" alt="Instagram Icon" ></a>
           </div>
           <div class="button">
-            <a href="/meet-the-stylists.php">
+            <a href="/stylists/jade.php">
               <p>Visit Jades' Page</p>
             </a>
           </div>
         </div>
-      </article >
+      </article>
     </div>
   </section>
 </main>

@@ -45,15 +45,26 @@
           <p class="dark">Facebook Messenger</p>
         </div>
         <div class="single-icons" >
-          <img src="/dist/images/icons/email-light.svg" alt="Facebook Messenger logo" title="Use facebook messenger ? So do we! Get in touch.">
+          <img src="/dist/images/icons/email-light.svg" alt="White email icon envolope on a black circle background" title="Email us at info@studiojburnley.co.uk">
           <p class="dark">info@studiojburnley.co.uk</p>
         </div>
         <div class="single-icons" >
-          <img src="/dist/images/icons/phone.svg" alt="Facebook Messenger logo" title="Use facebook messenger ? So do we! Get in touch.">
+          <img src="/dist/images/icons/phone.svg" alt="White phone icon on a black circle background" title="Give us a call on 01282 123 123">
           <p class="dark">01282 123 123</p>
         </div>
       </div>
-    </div>
+      <!-- <div class="map-wrapper" >
+        <img src="/dist/images/map-mobile.jpg" alt="A map created in SnazzyMaps showing the location of StudioJ" >
+        <div>
+          <ul>
+            <li>Address Line 1</li>
+            <li>Address Line 2</li>
+            <li>City</li>
+            <li>PostCode</li>
+          </ul>
+        </div>
+      </div> -->
+    </div> <!-- end of inner container -->
   </section>
 </main>
 

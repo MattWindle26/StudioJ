@@ -47,13 +47,13 @@
             <img src="/dist/images/work/curly-hair.jpg" >
           </div>
           <div class="cell">
-            <img src="/dist/images/work/curly-hair.jpg" >
+            <img src="/dist/images/work/blonde-curls.jpg" >
           </div>
           <div class="cell">
-            <img src="/dist/images/work/curly-hair.jpg" >
+            <img src="/dist/images/work/blonde-straight.jpg" >
           </div>
           <div class="cell">
-            <img src="/dist/images/work/curly-hair.jpg" >
+            <img src="/dist/images/work/mirrored-image.jpg" >
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@
       <?php
         $jsondata = file_get_contents($path.'/facebook.json');
         $json = json_decode($jsondata, true);
-        $rand = rand(0,8);
+        $rand = rand(0,14);
         $rating = $json['data'][$rand]['rating'];
         $url =" http://graph.facebook.com/" . $json['data'][$rand]['reviewer']['id'] . "/picture?type=large";
         echo "<div class='testimonial-wrapper'>";

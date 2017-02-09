@@ -81,6 +81,7 @@ main{
           }
           p{
             word-wrap: break-word;
+            margin-bottom: 0;
           }
         }
       }
@@ -204,6 +205,12 @@ main{
               }
             }
           }
+        }
+      }
+      .map-wrapper{
+        width: 100%;
+        img{
+          width: 100%;
         }
       }
     }

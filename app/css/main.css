@@ -51,6 +51,7 @@ p, li, span, a, input, label, textarea, select, blockquote {
   font-size: 1.75rem;
   line-height: 1.5;
   transition: all 0.25s ease-in-out;
+  list-style-type: none;
 }
 p.center, li.center, span.center, a.center, input.center, label.center, textarea.center, select.center, blockquote.center {
   max-width: 600px;
@@ -58,6 +59,9 @@ p.center, li.center, span.center, a.center, input.center, label.center, textarea
 }
 p.dark, li.dark, span.dark, a.dark, input.dark, label.dark, textarea.dark, select.dark, blockquote.dark {
   color: #212121 !important;
+}
+p a, li a, span a, a a, input a, label a, textarea a, select a, blockquote a {
+  text-decoration: underline;
 }
 
 p {
@@ -99,12 +103,6 @@ input {
   -webkit-align-self: center;
   align-self: center;
 }
-.button.book-now {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  margin-top: 0px;
-}
 .button.small {
   max-width: 150px;
 }
@@ -113,6 +111,7 @@ input {
 }
 .button.dark p {
   color: #ecf0f1;
+  margin-bottom: 0 !important;
 }
 .button:hover {
   cursor: pointer;
@@ -121,7 +120,7 @@ input {
   color: #212121;
   text-align: center;
   letter-spacing: 2px;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 form {
@@ -449,6 +448,7 @@ main section .inner-container .icon-wrapper .single-icons img {
 }
 main section .inner-container .icon-wrapper .single-icons p {
   word-wrap: break-word;
+  margin-bottom: 0;
 }
 main section .inner-container .profile-content p {
   text-align: left;
@@ -605,6 +605,12 @@ main section .inner-container article.col-2 .col-50.text .button {
 main section .inner-container article.col-2 .col-50.text .button p {
   text-align: center;
 }
+main section .inner-container .map-wrapper {
+  width: 100%;
+}
+main section .inner-container .map-wrapper img {
+  width: 100%;
+}
 main section.fixed-bg {
   padding: 100px 0;
   background-image: url(/dist/images/jade-bg-mob.jpg);
@@ -706,9 +712,28 @@ footer .footer-section a.link:after {
   transition: all 0.25s ease-in-out;
 }
 
+@media (min-width: 250px) {
+  ul.dotted-list li:before {
+    position: relative;
+  }
+}
+@media (min-width: 425px) {
+  ul.dotted-list {
+    background-color: #212121;
+  }
+  ul.dotted-list li:before {
+    position: absolute;
+  }
+}
 @media (min-width: 600px) {
   main section .inner-container article.col-2 {
     width: 70%;
+  }
+
+  form {
+    width: 70%;
+    max-width: 860px;
+    margin: 20px auto;
   }
 }
 @media (min-width: 768px) {
@@ -979,6 +1004,9 @@ footer .footer-section a.link:after {
     text-align: center;
   }
 
+  form {
+    width: 100%;
+  }
   form .form-top {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;

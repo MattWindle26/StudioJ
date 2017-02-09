@@ -1,12 +1,39 @@
+$smallMobile: "(min-width: 250px)";
 $largeMobile: "(min-width: 425px)";
 $small-tablet: "(min-width: 600px)";
 $tablet: "(min-width: 768px)";
 $laptop: "(min-width: 1024px)";
 $desktop: "(min-width: 1440px)";
 
+
+@media #{$smallMobile} {
+  ul.dotted-list{
+    li{
+      &:before {
+        position: relative;
+      }
+    }
+  }
+}
+@media #{$largeMobile} {
+  ul.dotted-list{
+    background-color: $primaryColor;
+    li{
+      &:before {
+        position: absolute;
+      }
+    }
+  }
+}
+
 @media #{$small-tablet} {
 main section .inner-container article.col-2{
     width: 70%;
+  }
+  form{
+    width: 70%;
+    max-width: 860px;
+    margin: 20px auto;
   }
 }
 
@@ -235,6 +262,7 @@ main section .inner-container article.col-2{
     } //end of main section
   }
   form{
+    width: 100%;
     .form-top{
       @include flex-row;
     }

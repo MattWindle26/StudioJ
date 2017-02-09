@@ -51,12 +51,16 @@ p,li,span,a,input,label,textarea,select,blockquote{
   font-size: 1.75rem;
   line-height: 1.5;
   transition: all 0.25s ease-in-out;
+  list-style-type: none;
   &.center{
     max-width: 600px;
     margin: 0 auto;
   }
   &.dark{
     color: $primaryColor !important;
+  }
+  a{
+    text-decoration: underline;
   }
 }
 p{

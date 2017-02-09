@@ -12,7 +12,7 @@
 
 <?php include ('includes/header.php'); ?>
 
-<main class="" role="" >
+<main  role="main" >
   <section class="hair-pattern">
     <div class="inner-container" >
       <h2>What we do</h2>
@@ -25,10 +25,21 @@
   <section class="fixed-bg" >
     <div class="inner-container items-center" >
       <h2>Meet the stylists</h2>\
-      <p>Our Stylists have a combined 10 years experience in the industry and know how to treat their customers.
+      <p>Our Stylists have a combined 10 years experience in the industry and know how to treat their customers.</p>
       <a href="/meet-the-stylists.php" >
         <div class="button" >
           <p>Our Stylists</p>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section class="pattern-bg" >
+    <div class="inner-container items-center" >
+      <h2>Book your appointment today!</h2>\
+      <p class="dark" >Our Stylists have a combined 10 years experience in the industry and know how to treat their customers.</p>
+      <a href="/contact.php" >
+        <div class="button dark" >
+          <p>Book Appointment</p>
         </div>
       </a>
     </div>
